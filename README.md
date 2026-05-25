@@ -1,15 +1,17 @@
 # Edge LLM Lab
 
-This lab is for learning edge/on-device LLM deployment through small, reproducible experiments. The first target is a 1B-class model on an Intel Core Ultra laptop using OpenVINO, but the project is intentionally general enough to later cover NVIDIA, Qualcomm, Huawei, Android, iOS, and other deployment stacks.
+This lab is for learning edge/on-device LLM deployment through small, reproducible experiments. The project starts with a portable GGUF baseline so the core deployment concepts are not tied to one vendor stack, then uses an Intel Core Ultra laptop as the first hardware-specific optimization target.
 
-## First Experiment
+## Experiment Tracks
 
-- `experiments/intel-openvino-1b/` - baseline 1B LLM deployment on Intel CPU/GPU/NPU with OpenVINO.
+- `experiments/common-gguf-0.5b/` - portable GGUF baseline with llama.cpp and Ollama-oriented smoke tests.
+- `experiments/intel-openvino-1b/` - Intel CPU/GPU/NPU deployment with OpenVINO and OpenVINO GenAI.
 
 Current status:
 
-- Phase 0 inventory is complete: OpenVINO sees `CPU`, `GPU`, and `NPU`.
-- Phase 1 CPU baseline is complete for `Qwen/Qwen2.5-0.5B-Instruct`.
+- Intel OpenVINO Phase 0 inventory is complete: OpenVINO sees `CPU`, `GPU`, and `NPU`.
+- Intel OpenVINO Phase 1 CPU baseline is complete for `Qwen/Qwen2.5-0.5B-Instruct`.
+- The next priority is the common GGUF CPU baseline, not another Intel-specific optimization.
 - See `experiments/intel-openvino-1b/phase0-summary.md`.
 - See `experiments/intel-openvino-1b/phase1-cpu-baseline-summary.md`.
 
@@ -19,6 +21,7 @@ Current status:
 - Model size: only 0.5B/1B-class basic experiments for now.
 - Storage: keep virtualenvs, caches, model artifacts, exported models, and results inside this project when practical.
 - Git: do not push model weights, large exports, caches, raw logs, or secrets.
+- Route order: establish the common GGUF baseline first, then compare Intel-specific OpenVINO, GPU, NPU, and heterogeneous execution paths.
 
 ## Core Topics
 
@@ -35,6 +38,7 @@ Current status:
 - `AGENTS.md` - project operating rules for Codex.
 - `docs/experiment-record.md` - template for recording hardware, software, model, command, prompt, and result metadata.
 - `docs/local-storage.md` - local storage and cache policy.
+- `docs/runtime-selection.md` - why the project now starts with a portable GGUF baseline before vendor-specific stacks.
 - `docs/teaching-method.md` - how each experiment should teach mechanisms and debugging.
 - `docs/openvino-source-reading.md` - source-reading notes for OpenVINO runtime and plugins.
 - `docs/openvino-genai-source-reading.md` - source-reading notes for OpenVINO GenAI LLM generation.
