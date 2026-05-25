@@ -36,3 +36,22 @@ These files are generated locally and intentionally ignored by git:
 ## Interpretation
 
 Phase 1 can start with an OpenVINO CPU baseline. GPU and NPU are visible to OpenVINO, but they are not proven usable for LLM inference yet. Backend success must be validated with model execution and fallback checks in later phases.
+
+## Mechanism
+
+Phase 0 used OpenVINO Runtime's Python API:
+
+```python
+import openvino as ov
+
+core = ov.Core()
+core.available_devices
+core.get_property(device, "FULL_DEVICE_NAME")
+core.get_property(device, "OPTIMIZATION_CAPABILITIES")
+```
+
+`Core.available_devices` is a framework-level device discovery call. It asks OpenVINO Core to enumerate devices exposed by registered device plugins. In this local environment, the relevant plugin binaries are installed under `.venv/Lib/site-packages/openvino/libs/`, including CPU, GPU, NPU, AUTO, and HETERO plugins.
+
+This does not directly prove that an LLM can run on NPU. It proves that OpenVINO can see the NPU plugin and query basic device properties. Real backend execution must be checked later with `compile_model`, runtime logs/properties, output comparison, and fallback checks.
+
+Source-reading note: see `docs/openvino-source-reading.md`.

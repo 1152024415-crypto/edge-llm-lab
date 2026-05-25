@@ -21,6 +21,7 @@ Current status:
 ## Core Topics
 
 - Baseline inference and reproducibility
+- Framework architecture and source reading
 - INT8, INT4, W4A16, mixed precision, and layer exclusion
 - CPU/GPU/NPU backend validation and fallback detection
 - Speculative decoding
@@ -32,6 +33,8 @@ Current status:
 - `AGENTS.md` - project operating rules for Codex.
 - `docs/experiment-record.md` - template for recording hardware, software, model, command, prompt, and result metadata.
 - `docs/local-storage.md` - local storage and cache policy.
+- `docs/teaching-method.md` - how each experiment should teach mechanisms and debugging.
+- `docs/openvino-source-reading.md` - source-reading notes for OpenVINO runtime and plugins.
 - `docs/quality-gates.md` - practical quality gates for deployment experiments.
 
 ## Local Artifact Policy

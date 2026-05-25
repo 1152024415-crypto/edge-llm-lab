@@ -22,6 +22,7 @@ This project is a Codex-maintained lab for learning and validating edge/on-devic
 - Use `uv` for Python environments and Python command execution.
 - Keep local artifacts inside this project when practical. Document any external cache, model, or result path.
 - Current active scope is 0.5B/1B basic experiments. Do not expand to 3B/7B or vendor-specific stacks without an explicit request.
+- This is a teaching project. Each phase summary should explain the framework mechanism, relevant system boundary, and source-reading path, not only the command result.
 
 ## Experiment Workflow
 
