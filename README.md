@@ -6,6 +6,13 @@ This lab is for learning edge/on-device LLM deployment through small, reproducib
 
 - `experiments/intel-openvino-1b/` - baseline 1B LLM deployment on Intel CPU/GPU/NPU with OpenVINO.
 
+## Current Scope
+
+- Python environment: use `uv`.
+- Model size: only 0.5B/1B-class basic experiments for now.
+- Storage: keep virtualenvs, caches, model artifacts, exported models, and results inside this project when practical.
+- Git: do not push model weights, large exports, caches, raw logs, or secrets.
+
 ## Core Topics
 
 - Baseline inference and reproducibility
@@ -19,6 +26,7 @@ This lab is for learning edge/on-device LLM deployment through small, reproducib
 
 - `AGENTS.md` - project operating rules for Codex.
 - `docs/experiment-record.md` - template for recording hardware, software, model, command, prompt, and result metadata.
+- `docs/local-storage.md` - local storage and cache policy.
 - `docs/quality-gates.md` - practical quality gates for deployment experiments.
 
 ## Local Artifact Policy

@@ -19,6 +19,9 @@ This project is a Codex-maintained lab for learning and validating edge/on-devic
 - Preserve failures as useful evidence. Record the context, full error, likely failure class, and next diagnostic step.
 - Do not commit model weights, caches, large exports, secrets, API tokens, or license-unclear files.
 - Keep docs concise and practical. Put detailed commands and run metadata in experiment docs or result records, not in this file.
+- Use `uv` for Python environments and Python command execution.
+- Keep local artifacts inside this project when practical. Document any external cache, model, or result path.
+- Current active scope is 0.5B/1B basic experiments. Do not expand to 3B/7B or vendor-specific stacks without an explicit request.
 
 ## Experiment Workflow
 

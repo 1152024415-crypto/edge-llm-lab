@@ -18,6 +18,5 @@ Run a small LLM through OpenVINO, establish a baseline, test quantization, compa
 
 - `TinyLlama/TinyLlama-1.1B-Chat-v1.0`
 - `Qwen/Qwen2.5-0.5B-Instruct`
-- `Qwen/Qwen2.5-1.5B-Instruct`
 
-Start with the smallest model that exercises the pipeline.
+Start with the smallest model that exercises the pipeline. Do not move to 1.5B, 3B, or 7B models in this phase unless the user explicitly changes the scope.

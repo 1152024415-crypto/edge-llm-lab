@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.cache/
+.uv-cache/
 
 # Local model and runtime artifacts
 models/**
@@ -17,6 +19,10 @@ models/**
 *.mlpackage/
 *.tflite
 *.dlc
+*.pt
+*.pth
+*.engine
+*.plan
 
 # Generated experiment outputs
 results/**
