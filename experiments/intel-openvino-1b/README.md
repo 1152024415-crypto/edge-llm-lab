@@ -24,3 +24,7 @@ Start with the smallest model that exercises the pipeline. Do not move to 1.5B, 
 ## Phase 0
 
 - [Phase 0 Summary](phase0-summary.md) - environment inventory and OpenVINO device visibility check.
+
+## Phase 1
+
+- [Phase 1 CPU Baseline Summary](phase1-cpu-baseline-summary.md) - OpenVINO GenAI CPU baseline with `Qwen/Qwen2.5-0.5B-Instruct`.

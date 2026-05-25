@@ -5,7 +5,10 @@ description = "Learning lab for edge and on-device LLM deployment experiments."
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "huggingface-hub>=0.36.2",
     "openvino>=2025.3,<2027",
+    "openvino-genai>=2026.1.0.0",
+    "optimum-intel[openvino]>=1.27.0",
 ]
 
 [dependency-groups]

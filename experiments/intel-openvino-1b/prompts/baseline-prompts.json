@@ -1,0 +1,33 @@
+{
+  "name": "phase1-cpu-baseline",
+  "prompts": [
+    {
+      "id": "zh-edge-llm-short",
+      "category": "chinese-short-answer",
+      "text": "用三句话解释端侧 LLM 部署为什么需要 baseline。",
+      "max_new_tokens": 96,
+      "expected_format": "plain_text"
+    },
+    {
+      "id": "en-quantization",
+      "category": "english-short-answer",
+      "text": "Explain in three bullet points why quantization is useful for edge LLM deployment.",
+      "max_new_tokens": 96,
+      "expected_format": "plain_text"
+    },
+    {
+      "id": "json-format",
+      "category": "format-following",
+      "text": "You are a JSON API. Output exactly one minified JSON object and nothing else. The output must start with { and end with }. Use exactly these keys: model_size, latency, quality. Each value must be a short string about edge LLM deployment.",
+      "max_new_tokens": 96,
+      "expected_format": "json_object"
+    },
+    {
+      "id": "debugging",
+      "category": "debugging",
+      "text": "An OpenVINO model works on CPU but fails on Intel NPU. List four likely causes to investigate.",
+      "max_new_tokens": 96,
+      "expected_format": "plain_text"
+    }
+  ]
+}

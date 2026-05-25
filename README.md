@@ -9,7 +9,9 @@ This lab is for learning edge/on-device LLM deployment through small, reproducib
 Current status:
 
 - Phase 0 inventory is complete: OpenVINO sees `CPU`, `GPU`, and `NPU`.
+- Phase 1 CPU baseline is complete for `Qwen/Qwen2.5-0.5B-Instruct`.
 - See `experiments/intel-openvino-1b/phase0-summary.md`.
+- See `experiments/intel-openvino-1b/phase1-cpu-baseline-summary.md`.
 
 ## Current Scope
 
@@ -35,6 +37,7 @@ Current status:
 - `docs/local-storage.md` - local storage and cache policy.
 - `docs/teaching-method.md` - how each experiment should teach mechanisms and debugging.
 - `docs/openvino-source-reading.md` - source-reading notes for OpenVINO runtime and plugins.
+- `docs/openvino-genai-source-reading.md` - source-reading notes for OpenVINO GenAI LLM generation.
 - `docs/quality-gates.md` - practical quality gates for deployment experiments.
 
 ## Local Artifact Policy
