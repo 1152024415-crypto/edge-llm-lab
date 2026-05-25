@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local model and runtime artifacts
+models/**
+!models/.gitkeep
+*.safetensors
+*.bin
+*.onnx
+*.gguf
+*.xml
+*.blob
+*.ir
+*.mlpackage/
+*.tflite
+*.dlc
+
+# Generated experiment outputs
+results/**
+!results/.gitkeep
+experiments/**/results/**
+!experiments/**/results/.gitkeep
+*.log
+*.jsonl
+
+# Secrets and local config
+.env
+*.key
+*.token
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
