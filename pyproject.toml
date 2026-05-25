@@ -1,0 +1,18 @@
+[project]
+name = "edge-llm-lab"
+version = "0.1.0"
+description = "Learning lab for edge and on-device LLM deployment experiments."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "openvino>=2025.3,<2027",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

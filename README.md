@@ -6,6 +6,11 @@ This lab is for learning edge/on-device LLM deployment through small, reproducib
 
 - `experiments/intel-openvino-1b/` - baseline 1B LLM deployment on Intel CPU/GPU/NPU with OpenVINO.
 
+Current status:
+
+- Phase 0 inventory is complete: OpenVINO sees `CPU`, `GPU`, and `NPU`.
+- See `experiments/intel-openvino-1b/phase0-summary.md`.
+
 ## Current Scope
 
 - Python environment: use `uv`.

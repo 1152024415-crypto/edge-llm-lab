@@ -20,3 +20,7 @@ Run a small LLM through OpenVINO, establish a baseline, test quantization, compa
 - `Qwen/Qwen2.5-0.5B-Instruct`
 
 Start with the smallest model that exercises the pipeline. Do not move to 1.5B, 3B, or 7B models in this phase unless the user explicitly changes the scope.
+
+## Phase 0
+
+- [Phase 0 Summary](phase0-summary.md) - environment inventory and OpenVINO device visibility check.
